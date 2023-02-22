@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import Slider from '../components/Slider';
 import Link from 'next/Link';
 import React from 'react';
 // import Image from 'next/image';
@@ -79,6 +80,7 @@ export default function Platforms() {
                     <button className="bg-green-500 hover:bg-green-700 text-white border border-gray-500 px-6 py-3 rounded transition duration-300">Submit</button>
                 </Link>
             </div>
+            <Slider></Slider>
         </>
     );
 }
