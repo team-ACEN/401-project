@@ -1,9 +1,17 @@
 import { useState } from 'react';
+import Link from 'next/Link';
+import React from 'react';
 // import Image from 'next/image';
 
 export default function Platforms() {
 
-
+    const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+        return (
+            <a href={href} onClick={onClick} ref={ref}>
+                Submit
+            </a>
+        )
+    })
     const [imageClicked, setImageClicked] = useState(false);
 
 
@@ -13,7 +21,7 @@ export default function Platforms() {
 
     return (
         <>
-        <div>
+            <div>
                 <p className="text-center text-2xl"> What Services Do You Have?</p>
             </div>
             <div className="flex justify-center grid grid-rows-2 grid-flow-col gap-4 ">
@@ -67,7 +75,9 @@ export default function Platforms() {
                 </div>
             </div>
             <div>
-                <button className="rounded-full">Button A</button>
+                <Link href="/genres">
+                    <MyButton />
+                </Link>
             </div>
         </>
     );

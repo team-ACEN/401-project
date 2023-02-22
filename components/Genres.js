@@ -1,6 +1,25 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Link from 'next/Link';
+import React from 'react';
+
+
+
+
+
 export default function Genres() {
+    const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+        return (
+            <a href={href} onClick={onClick} ref={ref}>
+                Submit
+            </a>
+        )
+    })
     return (
-      <>
+
+        <>
+            <Header />
+
             <div className="text-center">
                 <p className="text-center text-2xl"> What Genres Do You Prefer?</p>
             </div>
@@ -56,9 +75,12 @@ export default function Genres() {
                     </div>
                 </div>
                 <div>
-                    <button>Button A</button>
+                    <Link href="/result">
+                        <MyButton />
+                    </Link>
                 </div>
             </div>
-      </>
+            <Footer />
+        </>
     );
 }
