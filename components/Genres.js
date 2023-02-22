@@ -1,11 +1,30 @@
+import Header from '../components/Header';
+import Footer from '../components/Footer';
+import Link from 'next/Link';
+import React from 'react';
+
+
+
+
+
 export default function Genres() {
+    const MyButton = React.forwardRef(({ onClick, href }, ref) => {
+        return (
+            <a href={href} onClick={onClick} ref={ref}>
+                Submit
+            </a>
+        )
+    })
     return (
-      <>
-            <div className="text-center">
-                <p className="text-center text-2xl"> What Genres Do You Prefer?</p>
+
+        <>
+            <Header />
+
+            <div className="mt-20 text-center">
+                <p className="text-center text-2xl mb-10 font-bold text-black"> What Genres Do You Prefer?</p>
             </div>
-            <div className="flex justify-center grid grid-rows-2 grid-flow-col gap-4 ">
-                <div className="flex justify-center grid grid-rows-2 grid-flow-col gap-4 ">
+            <div className=" justify-center grid grid-rows-2 grid-flow-col gap-10 ">
+                <div className=" justify-center grid grid-rows-2 grid-flow-col gap-4 ">
                     <div className="aspect-w-1">
                         <p>Action</p>
                         <img className=" object-fill h-40 w-96 ... w-16 md:w-32 lg:w-48" src="/assets/action.png" alt='netflix'></img>
@@ -55,10 +74,13 @@ export default function Genres() {
                         <img className="object-fill h-40 w-96 ... w-16 md:w-32 lg:w-48" src="/assets/western.png" alt='youtube'></img>
                     </div>
                 </div>
-                <div>
-                    <button>Button A</button>
+                <div className='mb-40 mt-20 text-center'>
+                    <Link href="/result">
+                        <button className="bg-green-500 hover:bg-green-700 text-white border border-gray-500 px-6 py-3 rounded transition duration-300">Submit</button>
+                    </Link>
                 </div>
             </div>
-      </>
+            <Footer />
+        </>
     );
 }
