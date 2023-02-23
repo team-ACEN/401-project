@@ -11,7 +11,7 @@ export default function Navigation() {
                     </Link>
                 </li>
                 <li>
-                    <Link className="text-white-500 hover:text-green-500" href="/search" as="/search">
+                    <Link className="text-white-500 hover:text-green-500" href="/searchpage" as="/searchpage">
                         Search
                     </Link>
                 </li>
