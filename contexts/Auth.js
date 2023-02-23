@@ -8,6 +8,7 @@
 
 // export function useAuth() {
 //     const auth = useContext(AuthContext);
+//     // console.log(auth);
 //     if (!auth) {
 //         throw new Error('You forgot AuthProvider!');
 //     }

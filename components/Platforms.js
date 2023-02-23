@@ -76,11 +76,11 @@ export default function Platforms() {
                 </div>
             </div>
             <div className='mb-40 mt-20 text-center'>
-                <Link href="/genres">
+                <Link href="/genrespage">
                     <button className="bg-green-500 hover:bg-green-700 text-white border border-gray-500 px-6 py-3 rounded transition duration-300">Submit</button>
                 </Link>
             </div>
-            <Slider></Slider>
+            {/* <Slider></Slider> */}
         </>
     );
 }
