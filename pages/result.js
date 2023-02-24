@@ -1,6 +1,6 @@
-import Link from 'next/link';
 import Result from '../components/ResultComponent';
-import ResultComponent from '../components/ResultComponent';
+import Search from '../components/Search';
+
 
 
 
@@ -8,7 +8,7 @@ import ResultComponent from '../components/ResultComponent';
 export default function result() {
   return (
     <>
-      <ResultComponent/>
+      <Search/>
     </>
   );
 }
