@@ -62,7 +62,7 @@ export default function Search(props) {
                 </div>
             </div>
             <div className="w-full mt-8">
-                <p className="text-center text-2xl mb-10 font-bold text-black shadow-md">Search Results:</p>
+                <p className="text-center text-2xl mb-10 font-bold ">Search Results:</p>
                 <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
                     {results.map(item => (
                         <div key={item.id} className="flex flex-col items-center">

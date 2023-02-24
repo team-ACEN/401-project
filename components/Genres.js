@@ -18,7 +18,7 @@ export default function Genres() {
         <>
             <Header />
             <div className="mt-20 text-center">
-                <p className="text-center text-2xl mb-10 font-bold text-black shadow-md"> What Genres Do You Prefer?</p>
+                <p className="text-center text-2xl mb-10 font-bold"> What Genres Do You Prefer?</p>
             </div>
             <div className=" justify-center grid grid-rows-2 grid-flow-col gap-10 ">
                 <div style={{ border: "4px solid #ccc" }} className=" justify-center grid grid-rows-2 grid-flow-col gap-4 border-black-300 bg-gradient-to-r from-purple-500 to-pink-500">

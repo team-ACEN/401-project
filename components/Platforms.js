@@ -39,7 +39,7 @@ const StreamingServices = () => {
     return (
         <MyContext.Provider value={{ selectedServices, setSelectedServices }}>
             <div className="mt-20">
-                <p className="text-center text-2xl mb-10 font-bold text-black shadow-md">
+                <p className="text-center text-2xl mb-10 font-bold">
                     {' '}
                     What Services Do You Have?
                 </p>
