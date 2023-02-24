@@ -15,6 +15,8 @@ export default function Genres() {
             </a>
         )
     })
+
+    MyButton.displayName = 'MyButton';
     return (
 
         <>
@@ -75,7 +77,7 @@ export default function Genres() {
                     </div>
                 </div>
                 <div className='mb-40 mt-20 text-center'>
-                    <Link href="/result">
+                    <Link href="/recommendations">
                         <button className="bg-green-500 hover:bg-green-700 text-white border border-gray-500 px-6 py-3 rounded transition duration-300">Submit</button>
                     </Link>
                 </div>

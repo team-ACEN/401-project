@@ -7,7 +7,7 @@ export default function Navigation() {
             <ul className="flex gap-10">
                 <li>
                     <Link className="text-white-500 hover:text-green-500" href="/" as="/">
-                        Profile
+                        Home
                     </Link>
                 </li>
                 <li>
